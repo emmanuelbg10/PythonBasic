@@ -7,9 +7,6 @@ week = {
     5: "Viernes",
     6: "Sabado",
     7: "Domingo"
-}
+}.get(num, "Error, vuelva a intentarlo")
 
-if 1 <= num <= 7:
-    print(f"Es el dia {week[num]}")
-else:
-    print("No es un numero del 1 al 7")
+print(week)
