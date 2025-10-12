@@ -20,4 +20,3 @@ else:
 
 # Mostramos el resultado con el signo
 print(f"El número {num} en binario es: {signo}{binario}")
--2
