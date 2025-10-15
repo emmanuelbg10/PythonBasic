@@ -1,5 +1,4 @@
 name = "emmanuel"
-print(f"me llamo {name} \n")
+print(f"me llamo {name.upper()} \n")
 
-name = "EMMANUEl"
-print(f"me llamo {name} con MAYUSCULAS")
+print(f"me llamo {name.lower()} con MAYUSCULAS")

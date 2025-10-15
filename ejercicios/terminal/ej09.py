@@ -6,7 +6,7 @@ operaciones = {
     "suma": lambda x, y: x + y,
     "resta": lambda x, y: x - y,
     "multiplicacion": lambda x, y: x * y,
-    "division": lambda x, y: x / y
+    "division": lambda x, y: x / y if y != 0 else 0
 }
 
 for nombre, operacion in operaciones.items():

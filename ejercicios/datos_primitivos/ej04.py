@@ -1,5 +1,2 @@
-num = 2; x = False
-
-if num % 2 == 0:
-    x = True
+num = 2; x = num % 2 == 0
 print(x)
