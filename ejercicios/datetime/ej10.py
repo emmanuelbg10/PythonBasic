@@ -1,32 +1,28 @@
 import datetime
 
-print("Escribe tu fecha de nacimiento: ")
-try:
-    año = int(input("Escribe tu año: "))
-    mes = int(input("Escribe tu mes: "))
-    dia = int(input("Escribe tu dia: "))
+# Pedir fecha de nacimiento
+año = int(input("Año: "))
+mes = int(input("Mes: "))
+dia = int(input("Día: "))
 
-    fecha_usuario = datetime.date(año, mes, dia)
+fecha_nac = datetime.date(año, mes, dia)
+hoy = datetime.date.today()
 
-except:
-    print("Fecha no válida")
-    exit()
+# años
+años = hoy.year - fecha_nac.year
+if (hoy.month, hoy.day) < (fecha_nac.month, fecha_nac.day):
+    años -= 1
 
-fecha_actual = datetime.date.today()
+# meses
+meses = hoy.month - fecha_nac.month
+if hoy.day < fecha_nac.day:
+    meses -= 1
+if meses < 0:
+    meses += 12
 
-año_usuario = fecha_actual.year - fecha_usuario.year
-if (fecha_actual.month, fecha_actual.day) < (fecha_usuario.month, fecha_usuario.day):
-    año_usuario -= 1
+# dias 
+dias = hoy.day - fecha_nac.day
+if dias < 0:
+    dias += 30  
 
-# Calcular meses
-mes_usuario = fecha_actual.month - fecha_usuario.month
-if fecha_actual.day < fecha_usuario.day:
-    mes_usuario -= 1
-if mes_usuario < 0:
-    mes_usuario += 12
-
-# Calcular días totales
-total_dias = (fecha_actual - fecha_usuario).days
-total_meses = año_usuario * 12 + mes_usuario
-
-print(f"Tienes {año_usuario} años, o {total_meses} meses, o {total_dias} días vivo")
+print(f"Tienes {años} años, {meses} meses y {dias} días.")
