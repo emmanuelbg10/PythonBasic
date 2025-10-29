@@ -4,7 +4,7 @@ class Dron(VehiculoAutonomo):
     def __init__(self, nombre, tipo_motor, capacidad_bateria):
         super().__init__()
         self.nombre = nombre
-        self.tipo_motor = tipo_motor
+        self.tipo_motor = tipo_motor # electrico, hibrido, gasolina
         self.capacidad_bateria = capacidad_bateria 
 
     def iniciar_sistema_navegacion(self):
