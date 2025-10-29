@@ -8,7 +8,7 @@ class CuentaBancaria:
     
     @saldo.setter
     def saldo(self, nuevo_saldo):
-        if nuevo_saldo > 0:
+        if nuevo_saldo >= 0:
             self.__saldo = nuevo_saldo
 
 cuenta1 = CuentaBancaria(2000)
@@ -20,8 +20,8 @@ cuenta1.saldo = 1
 
 print("Nuevo saldo:", cuenta1.saldo)
 
-cuenta1.saldo = 0
+cuenta1.saldo = -2
 
 print("No hay cambios:", cuenta1.saldo)
 
-print("No hay cambios porque el saldo no puede ser nunca menor o igual a 0")
+print("No hay cambios porque el saldo no puede ser nunca menor a 0")
