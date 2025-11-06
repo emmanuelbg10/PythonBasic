@@ -4,7 +4,6 @@ from cebra import Cebra
 
 class Zoologico:
     
-
     def __init__(self, animales):
         self.animales = animales
         self.especies_alimentadas = {}
