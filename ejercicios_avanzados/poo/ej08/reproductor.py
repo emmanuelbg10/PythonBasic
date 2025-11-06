@@ -1,8 +1,7 @@
 from archivo_multimedia import ArchivoMultimedia
 from archivo_audio import ArchivoAudio
-from archivo_imagen import ArchivoImagen
 from archivo_video import ArchivoVideo
-
+from archivo_imagen import ArchivoImagen
 
 class Reproductor:
     def __init__(self, lista_archivos=None):
@@ -25,12 +24,12 @@ class Reproductor:
     def reproducir_archivos(self):
         """Reproduce todos los archivos de la lista."""
         for archivo in self.lista_archivos:
-            print(archivo.reproducir())
+            archivo.reproducir()
 
     def detener_archivos(self):
         """Detiene la reproducción de todos los archivos."""
         for archivo in self.lista_archivos:
-            print(archivo.deteniendo())
+            archivo.deteniendo()
 
 
 audio1 = ArchivoAudio("cancion_rock.mp3", 5.6, "MP3", "00:03:45", "Shawn James")

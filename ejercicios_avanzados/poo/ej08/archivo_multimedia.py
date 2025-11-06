@@ -3,7 +3,6 @@ class ArchivoMultimedia:
         self.nombre = nombre
         self.tamaño = tamaño
         self.formato = formato
-        pass
 
     def reproducir(self):
         print(f"Reproduciendo el archivo {self.nombre}.{self.formato}")
@@ -13,4 +12,3 @@ class ArchivoMultimedia:
 
     def __str__(self):
         return f"Nombre: {self.nombre}\nTamaño: {self.tamaño} MB\nFormato: {self.formato}"
-    
