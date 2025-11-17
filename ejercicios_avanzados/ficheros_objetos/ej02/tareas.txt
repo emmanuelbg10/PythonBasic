@@ -1,0 +1,9 @@
+Descripción: Comprar leche para la semana
+Completada: False
+
+Descripción: Terminar el ejercicio de ficheros
+Completada: True
+
+Descripción: Llamar a mi hermana
+Completada: False
+
