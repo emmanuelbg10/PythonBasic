@@ -1,0 +1,29 @@
+[
+    {
+        "id_pedido": 101,
+        "cliente": "Ana Martínez",
+        "productos": [
+            "Manzanas",
+            "Leche",
+            "Pan"
+        ]
+    },
+    {
+        "id_pedido": 102,
+        "cliente": "Juan Pérez",
+        "productos": [
+            "Huevos",
+            "Arroz",
+            "Tomates"
+        ]
+    },
+    {
+        "id_pedido": 103,
+        "cliente": "Lucía Gómez",
+        "productos": [
+            "Café",
+            "Azúcar",
+            "Galletas"
+        ]
+    }
+]

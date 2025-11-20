@@ -1,5 +1,7 @@
 import os
 import csv
+from typing import List
+
 
 class Producto:
 
@@ -10,14 +12,18 @@ class Producto:
 
     @classmethod
     def leer_productos(cls):
+        productos = []
         ruta = os.path.dirname(__file__)
         archivo = os.path.join(ruta, "productos.csv")
-        with open(archivo) as file:
+        with open(archivo, encoding="utf-8") as file:
             csv_reader = csv.reader(file, delimiter=",")
             next(csv_reader)
             for fila in csv_reader:
                 id, nombre, precio = fila
-                print(id, nombre, precio)
+                productos.append(cls(id, nombre, precio))
+
+        return productos
+
 
 def guardar_productos(productos):
     ruta = os.path.dirname(__file__)
@@ -31,13 +37,13 @@ def guardar_productos(productos):
 
 
 lista_productos = [
-    Producto(1, "Teclado mecánico", 59.99), 
-    Producto(2, "Ratón inalámbrico", 24.50), 
-    Producto(3, "Monitor", 129.90)
-    ]
+    Producto(1, "Teclado mecánico", 59.99),
+    Producto(2, "Ratón inalámbrico", 24.50),
+    Producto(3, "Monitor", 129.90),
+]
 
 guardar_productos(lista_productos)
 
-Producto.leer_productos()
-
-
+productos: List[Producto] = Producto.leer_productos()
+for producto in productos:
+    print(f"{producto.id}, {producto.nombre}, {producto.precio}€")

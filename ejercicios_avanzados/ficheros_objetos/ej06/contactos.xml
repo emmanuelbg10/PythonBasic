@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<contactos>
+    <contacto>
+        <nombre>Ana Martínez</nombre>
+        <telefono>600123456</telefono>
+        <email>ana.martinez@email.com</email>
+    </contacto>
+    <contacto>
+        <nombre>Juan Pérez</nombre>
+        <telefono>611987654</telefono>
+        <email>juan.perez@email.com</email>
+    </contacto>
+    <contacto>
+        <nombre>Lucía Gómez</nombre>
+        <telefono>622555888</telefono>
+        <email>lucia.gomez@email.com</email>
+    </contacto>
+</contactos>

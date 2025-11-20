@@ -1,0 +1,23 @@
+[
+    {
+        "nombre": "Ana",
+        "configuracion": {
+            "tema": "oscuro",
+            "notificaciones": true
+        }
+    },
+    {
+        "nombre": "Luis",
+        "configuracion": {
+            "tema": "claro",
+            "notificaciones": false
+        }
+    },
+    {
+        "nombre": "Marta",
+        "configuracion": {
+            "tema": "oscuro",
+            "notificaciones": false
+        }
+    }
+]
