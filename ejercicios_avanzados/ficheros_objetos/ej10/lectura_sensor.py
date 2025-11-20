@@ -1,4 +1,5 @@
 import struct
+from typing import List
 import os
 
 ruta = os.path.dirname(__file__)
@@ -20,7 +21,7 @@ class LecturaSensor:
         return cls(id_sensor, timestamp, valor)
 
     @classmethod
-    def guardar_lecturas(cls, lecturas):
+    def guardar_lecturas(cls, lecturas: "List[LecturaSensor]"):
         with open(archivo, "wb") as file:
             for lectura in lecturas:
                 file.write(lectura.to_bytes())
@@ -44,7 +45,7 @@ lecturas = [
 ]
 
 LecturaSensor.guardar_lecturas(lecturas)
-lecturas_leidas = LecturaSensor.leer_lecturas()
+lecturas_leidas: List[LecturaSensor] = LecturaSensor.leer_lecturas()
 
 for lectura in lecturas_leidas:
     print(
