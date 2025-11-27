@@ -3,7 +3,7 @@ from typing import List
 import os
 
 ruta = os.path.dirname(__file__)
-archivo = os.path.join(ruta, "jugadores.msgpack")
+archivo = os.path.join(ruta, "lecturas.msgpack")
 
 
 class LecturaSensor:
