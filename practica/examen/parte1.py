@@ -1,4 +1,6 @@
 from abc import ABC, abstractmethod
+import json
+import os
 
 
 class Persona(ABC):
@@ -71,4 +73,20 @@ print(datos)
 promedio_total = sum([e.promedio() for e in datos["estudiantes"]]) / len(
     datos["estudiantes"]
 )
+profesores_mates = [x for x in datos["profesores"] if x.asignatura == "Mates"]
 print(promedio_total)
+for profesor in profesores_mates:
+    print(profesor.explicar())
+
+print("\nPARTE3:")
+
+ruta_actual = os.path.dirname(__file__)
+archivo = os.path.join(ruta_actual, "datos.json")
+
+with open(archivo, "w", encoding="utf-8") as file:
+    json.dump(
+        [{"nombre": e.nombre, "edad": e.edad, "notas": e.notas} for e in estudiantes],
+        file,
+        indent=4,
+        ensure_ascii=False,
+    )
