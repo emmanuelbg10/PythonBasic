@@ -1,0 +1,6 @@
+Emmanuel: 8
+Juanito: 7
+Paco: 4
+Luis: 4
+Julio: 5
+Eduardo: 7

@@ -1,0 +1,12 @@
+[
+    {
+        "nombre": "Marco",
+        "edad": 40,
+        "asignatura": "Matem\u00e1ticas"
+    },
+    {
+        "nombre": "Ismael",
+        "edad": 34,
+        "asignatura": "Programaci\u00f3n"
+    }
+]

@@ -1,0 +1,27 @@
+{
+    "Persona1": [
+        {
+            "nombre": "Marco",
+            "edad": 40,
+            "asignatura": "Matemáticas"
+        }
+    ],
+    "Persona2": [
+        {
+            "nombre": "Ismael",
+            "edad": 34,
+            "asignatura": "Programación"
+        }
+    ],
+    "Persona3": [
+        {
+            "nombre": "Emmanuel",
+            "edad": 20,
+            "notas": [
+                10,
+                9,
+                9.5
+            ]
+        }
+    ]
+}
